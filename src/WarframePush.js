@@ -1,26 +1,26 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-const HelloWorld = () => {
+const WarframePush = () => {
   function sayHello() {
     alert("test");
   }
   return (
     <Container>
       <Row>
-        <Col>
+        <Col md="auto">
           <Button variant="primary" onClick={sayHello} size="lg">
-            Test 1
+            Ask user permission
           </Button>
         </Col>
-        <Col>
+        <Col md="auto">
           <Button variant="primary" onClick={sayHello} size="lg">
-            Test 2
+            Create Notification subscription
           </Button>
         </Col>
-        <Col>
+        <Col md="auto">
           <Button variant="primary" onClick={sayHello} size="lg">
-            Test 3
+            Send subscription to push server
           </Button>
         </Col>
       </Row>
@@ -28,4 +28,4 @@ const HelloWorld = () => {
   );
 };
 
-export default HelloWorld;
+export default WarframePush;
